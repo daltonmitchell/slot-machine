@@ -16,6 +16,10 @@ body {
     background-color: white;
     border: 4px solid black;
     flex-direction: column;
+    text-align: center;
+    line-height: 100px;
+    font: 80px solid black;
+    line-height: 230px;
 }
 
 #bank {
