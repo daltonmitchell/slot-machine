@@ -1,0 +1,18 @@
+body {
+    background: rgb(5, 107, 141)
+}
+
+#slot {
+    background: white;
+    margin: 100px auto;
+    height: 600px;
+    width: 800px;
+    border: 2px solid black;
+    display: flex;
+}
+
+#column, #column1, #column2 {
+    border: 2px solid black;
+    height: 600px;
+    width: 265.67px;
+}
