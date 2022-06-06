@@ -22,6 +22,11 @@ body {
     line-height: 230px;
 }
 
+#resultMessage {
+    text-align: center;
+    font: 50px solid black;
+}
+
 #bank {
     font-size: 30px;
     position: absolute;
