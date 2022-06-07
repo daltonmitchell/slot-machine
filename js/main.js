@@ -10,10 +10,7 @@ let balance = 10000;
 const bank = document.getElementById('bank');
 bank.innerText = 'Balance: $' + balance;
 
-
-
-let tiles = ['j', 'q', 'k', 'a', 'c']
-
+let tiles = ['j','q', 'k', 'a', 'c']
 
 
 /*-------------event listeners-------------*/
@@ -33,9 +30,10 @@ function onSpin(){
     balance = balance - 100;
     
     /* chooses a tile to place in each slot */
-    slot.innerText = tiles[Math.floor(Math.random() * 5)];
-    slot2.innerText = tiles[Math.floor(Math.random() * 5)];
-    slot3.innerText = tiles[Math.floor(Math.random() * 5)];
+    slot.innerHTML = tiles[Math.floor(Math.random() * 5)];
+    slot2.innerHTML = tiles[Math.floor(Math.random() * 5)];
+    slot3.innerHTML = tiles[Math.floor(Math.random() * 5)];
+
     
     /* adds winnings to player balance */
     const result = slot.innerText + slot2.innerText + slot3.innerText;
@@ -57,10 +55,26 @@ function onSpin(){
     }else{
         winMessage.innerText = 'Try again!';
     }
-
+    
     if(balance < 100){
         winMessage.innerText = 'Bankrupt! You lose.';
     }
+    
+    /* adds images to slot tiles by changing the divs background image */
+    if(slot.innerText === 'j'){
+        slot.style.backgroundImage = "url('https://i.imgur.com/pG2hJnE.jpg')";
+        slot.innerText = '';
+    }
 
+    if(slot2.innerText === 'j'){
+        slot2.style.backgroundImage = "url('https://i.imgur.com/pG2hJnE.jpg')";
+        slot2.innerText = '';
+    }
+
+    if(slot3.innerText === 'j'){
+        slot3.style.backgroundImage = "url('https://i.imgur.com/pG2hJnE.jpg')";
+        slot3.innerText = '';
+    }
+    
     bank.innerText = 'Balance: $' + balance;
 }
