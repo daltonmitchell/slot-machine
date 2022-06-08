@@ -1,25 +1,3 @@
-/*----------------const---------------*/
-const slot = document.getElementById('slot'); 
-const slot2 = document.getElementById('slot2'); 
-const slot3 = document.getElementById('slot3'); 
-
-const winMessage = document.getElementById('resultMessage');
-
-let balance = 10000;
-
-const bank = document.getElementById('bank');
-bank.innerText = 'Balance: $' + balance;
-
-let tiles = ['j','q', 'k', 'a', 'c']
-
-
-/*-------------event listeners-------------*/
-document.getElementById('button').addEventListener('click', onSpin);
-
-
-
-
-
 /*---------------functions-----------------*/
 function onSpin(){
     /* stops function if funds are insufficient */
@@ -60,19 +38,55 @@ function onSpin(){
         winMessage.innerText = 'Bankrupt! You lose.';
     }
     
-    /* adds images to slot tiles by changing the divs background image */
+    /* adds images to slot tiles */
     if(slot.innerText === 'j'){
+        slot.style.backgroundImage = "url('https://i.imgur.com/Qhmdbt1.jpg')";
+        slot.innerText = '';
+    }else if(slot.innerText === 'q'){
+        slot.style.backgroundImage = "url('https://i.imgur.com/fTkCmZZ.png')";
+        slot.innerText = '';
+    }else if(slot.innerText === 'k'){
+        slot.style.backgroundImage = "url('https://i.imgur.com/r6128fl.jpg')";
+        slot.innerText = '';
+    }else if(slot.innerText === 'a'){
         slot.style.backgroundImage = "url('https://i.imgur.com/pG2hJnE.jpg')";
+        slot.innerText = '';
+    }else if(slot.innerText === 'c'){
+        slot.style.backgroundImage = "url('https://i.imgur.com/u24VLBT.jpg')";
         slot.innerText = '';
     }
 
     if(slot2.innerText === 'j'){
+        slot2.style.backgroundImage = "url('https://i.imgur.com/Qhmdbt1.jpg')";
+        slot2.innerText = '';
+    }else if(slot2.innerText === 'q'){
+        slot2.style.backgroundImage = "url('https://i.imgur.com/fTkCmZZ.png')";
+        slot2.innerText = '';
+    }else if(slot2.innerText === 'k'){
+        slot2.style.backgroundImage = "url('https://i.imgur.com/r6128fl.jpg')";
+        slot2.innerText = '';
+    }else if(slot2.innerText === 'a'){
         slot2.style.backgroundImage = "url('https://i.imgur.com/pG2hJnE.jpg')";
+        slot2.innerText = '';
+    }else if(slot2.innerText === 'c'){
+        slot2.style.backgroundImage = "url('https://i.imgur.com/u24VLBT.jpg')";
         slot2.innerText = '';
     }
 
     if(slot3.innerText === 'j'){
+        slot3.style.backgroundImage = "url('https://i.imgur.com/Qhmdbt1.jpg')";
+        slot3.innerText = '';
+    }else if(slot3.innerText === 'q'){
+        slot3.style.backgroundImage = "url('https://i.imgur.com/fTkCmZZ.png')";
+        slot3.innerText = '';
+    }else if(slot3.innerText === 'k'){
+        slot3.style.backgroundImage = "url('https://i.imgur.com/r6128fl.jpg')";
+        slot3.innerText = '';
+    }else if(slot3.innerText === 'a'){
         slot3.style.backgroundImage = "url('https://i.imgur.com/pG2hJnE.jpg')";
+        slot3.innerText = '';
+    }else if(slot3.innerText === 'c'){
+        slot3.style.backgroundImage = "url('https://i.imgur.com/u24VLBT.jpg')";
         slot3.innerText = '';
     }
     
