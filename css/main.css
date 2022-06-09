@@ -53,6 +53,7 @@ h1 {
     height: 400px;
     width: 500px;
     margin-left: 50px;
+    margin-top: -200px;
     font: 50px solid black;
     color: rgb(216, 126, 29);
     font-family: 'Blaka Hollow', cursive;
@@ -74,21 +75,28 @@ h1 {
 .winPhotos {
     height: 75px;
     width: auto;
-    padding-left: 50px;
-    margin-left: 100px;
+    padding-left: 25px;
+    margin-left: 25px;
     padding: 5px;
 }
 
 #buttonContainer {
-    text-align: center;
     margin-top: 100px;
-    margin-left: 100px;
+    margin-left: 0px;
 }
 
 button {
-    height: 40px;
-    width: 65px;
-    background-color: rgb(216, 126, 29);
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-image: url('https://i.imgur.com/I8IQ6eR.png?1');
+    background-position: center;
+    background-size: 250px;
+    font: 50px solid black;
+    color: rgb(216, 126, 29);
+    font-family: 'Blaka Hollow', cursive;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 #bank {
@@ -98,4 +106,5 @@ button {
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     justify-self: self-end;
     margin-right: 50px;
+    width: 500px;
 }
