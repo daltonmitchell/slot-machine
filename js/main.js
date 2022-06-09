@@ -37,19 +37,25 @@ function onSpin(){
     if(result === 'ccc'){
         balance = balance + 50000;
         winMessage.innerText = 'Jackpot! You won $50,000!';
+        winMessage.style.color = 'gold';
     }else if(result === 'aaa'){
         balance = balance + 10000;
         winMessage.innerText = 'Incredible! You won $10,000!';
+        winMessage.style.color = 'gold';
     }else if(result === 'kkk'){
         balance = balance + 5000;
         winMessage.innerText = 'Amazing! You won $5,000!';
+        winMessage.style.color = 'gold';
     }else if(result === 'qqq'){
         balance = balance + 2000;
         winMessage.innerText = 'Nice! You won $2,000!';
+        winMessage.style.color = 'gold';
     }else if(result === 'jjj'){
         balance = balance + 1000;
         winMessage.innerText = 'Congrats! You won $1,000!';
+        winMessage.style.color = 'gold';
     }else{
+        winMessage.style.color = 'rgb(216, 126, 29)'
         winMessage.innerText = 'Try again!';
     }
     
