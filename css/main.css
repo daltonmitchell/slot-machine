@@ -50,14 +50,39 @@ h1 {
 }
 
 #winBoard {
-    background-color: aqua;
-    width: 200px;
+    height: 400px;
+    width: 500px;
+    margin-left: 50px;
+    font: 50px solid black;
+    color: rgb(216, 126, 29);
+    font-family: 'Blaka Hollow', cursive;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    display: flex;
+    flex-direction: column;
+}
+
+.boardEl {
+    display: flex;
+    flex-direction: row;
+}
+
+.boardText {
+    padding: 0px;
+    margin: 0px;
+}
+
+.winPhotos {
+    height: 75px;
+    width: auto;
+    padding-left: 50px;
+    margin-left: 100px;
+    padding: 5px;
 }
 
 #buttonContainer {
     text-align: center;
     margin-top: 100px;
-    margin-left: 250px;
+    margin-left: 100px;
 }
 
 button {
